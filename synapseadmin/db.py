@@ -3,11 +3,8 @@
 import psycopg2
 
 class Database(object):
-    def __init__(self, user, passwd):
-        passwd = None
-        with open(passwd_file, 'r') as f:
-            passwd = f.readline()
-        self.connection = psycopg2.connect(database='synapse', user='synapse_user', password=passwd)
+    def __init__(self, config):
+        self.connection = psycopg2.connect(database='synapse', user=config.database_user, password=config.database_passwd)
 
     def close(self):
         self.connection.close()

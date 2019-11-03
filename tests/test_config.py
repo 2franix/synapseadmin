@@ -9,7 +9,7 @@ def sample_config_file(tmpdir):
     with open(config_file, 'w') as f:
         f.write('''{
             "synapse": {
-                "accessToken" : "access_token_here!"
+                "accessToken": "access_token_here!"
             },
             "database": {
                 "user": "synapse_user",

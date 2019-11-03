@@ -10,5 +10,5 @@ setup(name='synapseadmin',
       version='1.0.0',
       description=__doc__,
       packages=['synapseadmin'],
-      requires=[],
-      install_requires=[])
+      requires=['requests'],
+      install_requires=['requests'])
