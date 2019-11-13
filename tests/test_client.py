@@ -12,7 +12,7 @@ def services():
 
 @pytest.fixture
 def admin_client(services):
-    admin_client = client.AdminClient(None, services) 
+    admin_client = client.AdminClient(None, services)
     yield admin_client
 
 def test_get_room_ids(admin_client):

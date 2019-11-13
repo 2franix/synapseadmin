@@ -18,7 +18,7 @@ class Config(object):
     @property
     def database_user(self):
         return self._db_user
-    
+
     @property
     def database_passwd(self):
         return self._db_passwd

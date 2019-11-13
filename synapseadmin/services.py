@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+from synapseadmin import db
+
 class ServiceFactory(object):
     def make_db_client(self):
         raise NotImplementedError('Not implemented.')
